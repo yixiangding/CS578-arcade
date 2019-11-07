@@ -6,8 +6,8 @@ To generate JAR files:
 Exporting a JAR: From Eclipse, export one JAR for each method within ARCADE that you would like to run as your main method. 
 Example for BatchClusteringEngine (ARC):
 a) Open  any Launch configuration that contains BatchClusteringEngine:
-      1. Change "<listEntry value="/arcade/src/edu/usc/softarch/arcade/AcdcWithSmellDetection.java"/>" to 
-      "<listEntry value="/CS578-arcade/src/edu/usc/softarch/arcade/AcdcWithSmellDetection.java"/>"
+      1. Change "\<listEntry value="/arcade/src/edu/usc/softarch/arcade/AcdcWithSmellDetection.java"/>" to 
+      "\<listEntry value="/CS578-arcade/src/edu/usc/softarch/arcade/AcdcWithSmellDetection.java"/>"
       
       2. Change "<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="arcade"/>" to 
       <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="CS578-arcade"/>
