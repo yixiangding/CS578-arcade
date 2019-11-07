@@ -4,12 +4,12 @@
 malletdir=`dirname $0`
 malletdir=`dirname $malletdir`
 
-cp="$malletdir/class;$malletdir/lib/mallet-deps.jar;$CLASSPATH"
+cp=$malletdir/class:$malletdir/lib/mallet-deps.jar:$CLASSPATH
 #echo $cp
 
-MEMORY=100g
+MEMORY=2g
 
-JAVA_COMMAND="java -Xmx$MEMORY -ea -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -classpath `cygpath -pw $cp`"
+JAVA_COMMAND="java -Xmx$MEMORY -ea -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -classpath $cp"
 
 CMD=$1
 shift
